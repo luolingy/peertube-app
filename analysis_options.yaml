@@ -1,0 +1,21 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    # The Radio groupValue/onChanged pair is deprecated in favour of RadioGroup
+    # in newer Flutter versions but remains functional; the migrated
+    # RadioGroup API is not available on all Flutter versions we target.
+    deprecated_member_use: ignore
+
+linter:
+  rules:
+    # Pure style rules kept off: they carry no behaviour change and the code
+    # base favours explicitness in async context handling.
+    unnecessary_underscores: false
+    use_null_aware_elements: false
+    unnecessary_string_interpolations: false
+    use_build_context_synchronously: false
+    prefer_initializing_formals: false

@@ -1,0 +1,286 @@
+﻿abuse.ts : abuseRouter.get(
+abuse.ts : abuseRouter.put(
+abuse.ts : abuseRouter.post(
+abuse.ts : abuseRouter.delete(
+abuse.ts : abuseRouter.get(
+abuse.ts : abuseRouter.post(
+abuse.ts : abuseRouter.delete(
+accounts.ts : accountsRouter.get(
+accounts.ts : accountsRouter.get(
+accounts.ts : accountsRouter.get(
+accounts.ts : accountsRouter.get(
+accounts.ts : accountsRouter.get(
+accounts.ts : accountsRouter.get(
+accounts.ts : accountsRouter.get(
+accounts.ts : accountsRouter.get(
+automatic-tags.ts : automaticTagRouter.get(
+automatic-tags.ts : automaticTagRouter.put(
+automatic-tags.ts : automaticTagRouter.get(
+automatic-tags.ts : automaticTagRouter.put(
+automatic-tags.ts : automaticTagRouter.get(
+automatic-tags.ts : automaticTagRouter.get(
+blocklist.ts : blocklistRouter.get('/status', optionalAuthenticate, blocklistStatusValidator, asyncMiddleware(getBlocklistStatus))
+bulk.ts : bulkRouter.post('/remove-comments-of', authenticate, asyncMiddleware(bulkRemoveCommentsOfValidator), asyncMiddleware(bulkRemoveCommentsOf))
+client-config.ts : clientConfigRouter.post(
+config.ts : configRouter.get('/', openapiOperationDoc({ operationId: 'getConfig' }), asyncMiddleware(getConfig))
+config.ts : configRouter.get('/about', openapiOperationDoc({ operationId: 'getAbout' }), asyncMiddleware(getAbout))
+config.ts : configRouter.get(
+config.ts : configRouter.put(
+config.ts : configRouter.delete(
+config.ts : configRouter.post(
+config.ts : configRouter.delete(
+config.ts : configRouter.post(
+config.ts : configRouter.delete(
+config.ts : configRouter.post(
+config.ts : configRouter.delete(
+custom-page.ts : customPageRouter.get('/homepage/instance',
+custom-page.ts : customPageRouter.put('/homepage/instance',
+jobs.ts : jobsRouter.post(
+jobs.ts : jobsRouter.post(
+jobs.ts : jobsRouter.get(
+jobs.ts : jobsRouter.post(
+metrics.ts : metricsRouter.post('/playback', asyncMiddleware(addPlaybackMetricValidator), addPlaybackMetric)
+oauth-clients.ts : oauthClientsRouter.get('/local',
+overviews.ts : overviewsRouter.get('/videos', videosOverviewValidator, optionalAuthenticate, asyncMiddleware(getVideosOverview))
+player-settings.ts : playerSettingsRouter.get(
+player-settings.ts : playerSettingsRouter.put(
+player-settings.ts : playerSettingsRouter.get(
+player-settings.ts : playerSettingsRouter.put(
+plugins.ts : pluginRouter.get('/available',
+plugins.ts : pluginRouter.get('/',
+plugins.ts : pluginRouter.get('/:npmName/registered-settings',
+plugins.ts : pluginRouter.get('/:npmName/public-settings',
+plugins.ts : pluginRouter.put('/:npmName/settings',
+plugins.ts : pluginRouter.get('/:npmName',
+plugins.ts : pluginRouter.post('/install',
+plugins.ts : pluginRouter.post('/update',
+plugins.ts : pluginRouter.post('/uninstall',
+video-channel-sync.ts : videoChannelSyncRouter.post(
+video-channel-sync.ts : videoChannelSyncRouter.delete(
+video-playlist.ts : videoPlaylistRouter.get('/privacies', listVideoPlaylistPrivacies)
+video-playlist.ts : videoPlaylistRouter.get(
+video-playlist.ts : videoPlaylistRouter.get('/:playlistId', asyncMiddleware(videoPlaylistsGetValidator('summary')), getVideoPlaylist)
+video-playlist.ts : videoPlaylistRouter.post(
+video-playlist.ts : videoPlaylistRouter.put(
+video-playlist.ts : videoPlaylistRouter.delete(
+video-playlist.ts : videoPlaylistRouter.get(
+video-playlist.ts : videoPlaylistRouter.post(
+video-playlist.ts : videoPlaylistRouter.post(
+video-playlist.ts : videoPlaylistRouter.put(
+video-playlist.ts : videoPlaylistRouter.delete(
+watched-words.ts : watchedWordsRouter.get(
+watched-words.ts : watchedWordsRouter.get(
+watched-words.ts : watchedWordsRouter.get(
+watched-words.ts : watchedWordsRouter.get(
+watched-words.ts : watchedWordsRouter.post(
+watched-words.ts : watchedWordsRouter.post(
+watched-words.ts : watchedWordsRouter.delete(
+watched-words.ts : watchedWordsRouter.delete(
+watched-words.ts : watchedWordsRouter.post(
+watched-words.ts : watchedWordsRouter.post(
+watched-words.ts : watchedWordsRouter.put(
+watched-words.ts : watchedWordsRouter.put(
+watched-words.ts : watchedWordsRouter.delete(
+watched-words.ts : watchedWordsRouter.delete(
+runners\jobs-files.ts : runnerJobFilesRouter.post(
+runners\jobs-files.ts : runnerJobFilesRouter.post(
+runners\jobs-files.ts : runnerJobFilesRouter.post(
+runners\jobs-files.ts : runnerJobFilesRouter.post(
+runners\jobs.ts : runnerJobsRouter.post(
+runners\jobs.ts : runnerJobsRouter.post(
+runners\jobs.ts : runnerJobsRouter.post(
+runners\jobs.ts : runnerJobsRouter.post(
+runners\jobs.ts : runnerJobsRouter.post(
+runners\jobs.ts : runnerJobsRouter.post(
+runners\jobs.ts : runnerJobsRouter.post(
+runners\jobs.ts : runnerJobsRouter.get(
+runners\jobs.ts : runnerJobsRouter.delete(
+runners\manage-runners.ts : manageRunnersRouter.post(
+runners\manage-runners.ts : manageRunnersRouter.post(
+runners\manage-runners.ts : manageRunnersRouter.delete(
+runners\manage-runners.ts : manageRunnersRouter.get(
+runners\registration-tokens.ts : runnerRegistrationTokensRouter.post('/registration-tokens/generate',
+runners\registration-tokens.ts : runnerRegistrationTokensRouter.delete('/registration-tokens/:id',
+runners\registration-tokens.ts : runnerRegistrationTokensRouter.get('/registration-tokens',
+search\search-video-channels.ts : searchChannelsRouter.get(
+search\search-video-playlists.ts : searchPlaylistsRouter.get('/video-playlists',
+search\search-videos.ts : searchVideosRouter.get(
+server\contact.ts : contactRouter.post('/contact', asyncMiddleware(contactAdministratorValidator), asyncMiddleware(contactAdministrator))
+server\debug.ts : debugRouter.get(
+server\debug.ts : debugRouter.post(
+server\follows.ts : serverFollowsRouter.get(
+server\follows.ts : serverFollowsRouter.post(
+server\follows.ts : serverFollowsRouter.delete(
+server\follows.ts : serverFollowsRouter.get(
+server\follows.ts : serverFollowsRouter.delete(
+server\follows.ts : serverFollowsRouter.post(
+server\follows.ts : serverFollowsRouter.post(
+server\logs.ts : logsRouter.post('/logs/client', createClientLogRateLimiter, optionalAuthenticate, createClientLogValidator, createClientLog)
+server\logs.ts : logsRouter.get('/logs', authenticate, ensureUserHasRight(UserRight.MANAGE_LOGS), getLogsValidator, asyncMiddleware(getLogs))
+server\logs.ts : logsRouter.get('/audit-logs', authenticate, ensureUserHasRight(UserRight.MANAGE_LOGS), getAuditLogsValidator, asyncMiddleware(getAuditLogs))
+server\redundancy.ts : serverRedundancyRouter.put(
+server\redundancy.ts : serverRedundancyRouter.get(
+server\redundancy.ts : serverRedundancyRouter.post(
+server\redundancy.ts : serverRedundancyRouter.delete(
+server\server-blocklist.ts : serverBlocklistRouter.get(
+server\server-blocklist.ts : serverBlocklistRouter.post(
+server\server-blocklist.ts : serverBlocklistRouter.delete(
+server\server-blocklist.ts : serverBlocklistRouter.get(
+server\server-blocklist.ts : serverBlocklistRouter.post(
+server\server-blocklist.ts : serverBlocklistRouter.delete(
+server\server-blocklist.ts : serverBlocklistRouter.get(
+server\server-blocklist.ts : serverBlocklistRouter.post(
+server\server-blocklist.ts : serverBlocklistRouter.delete(
+server\server-blocklist.ts : serverBlocklistRouter.get(
+server\stats.ts : statsRouter.get('/stats',
+users\email-verification.ts : emailVerificationRouter.post(
+users\email-verification.ts : emailVerificationRouter.post(
+users\email-verification.ts : emailVerificationRouter.post(
+users\email-verification.ts : emailVerificationRouter.post(
+users\index.ts : usersRouter.get('/autocomplete', userAutocompleteValidator, asyncMiddleware(autocompleteUsers))
+users\index.ts : usersRouter.get(
+users\index.ts : usersRouter.post(
+users\index.ts : usersRouter.post(
+users\index.ts : usersRouter.get(
+users\index.ts : usersRouter.post(
+users\index.ts : usersRouter.put(
+users\index.ts : usersRouter.delete(
+users\index.ts : usersRouter.post(
+users\index.ts : usersRouter.post(
+users\me.ts : meRouter.get('/me', authenticate, asyncMiddleware(getMyInformation))
+users\me.ts : meRouter.delete('/me', authenticate, deleteMeValidator, asyncMiddleware(deleteMe))
+users\me.ts : meRouter.get('/me/video-quota-used', authenticate, asyncMiddleware(getMyVideoQuotaUsed))
+users\me.ts : meRouter.get(
+users\me.ts : meRouter.get(
+users\me.ts : meRouter.get(
+users\me.ts : meRouter.get(
+users\me.ts : meRouter.put(
+users\me.ts : meRouter.post(
+users\me.ts : meRouter.delete(
+users\me.ts : meRouter.post(
+users\my-abuses.ts : myAbusesRouter.get('/me/abuses',
+users\my-blocklist.ts : myBlocklistRouter.get(
+users\my-blocklist.ts : myBlocklistRouter.post(
+users\my-blocklist.ts : myBlocklistRouter.delete(
+users\my-blocklist.ts : myBlocklistRouter.get(
+users\my-blocklist.ts : myBlocklistRouter.post(
+users\my-blocklist.ts : myBlocklistRouter.delete(
+users\my-history.ts : myVideosHistoryRouter.get('/me/history/videos',
+users\my-history.ts : myVideosHistoryRouter.delete('/me/history/videos/:videoId',
+users\my-history.ts : myVideosHistoryRouter.post('/me/history/videos/remove',
+users\my-notifications.ts : meRouter.put(
+users\my-notifications.ts : myNotificationsRouter.get(
+users\my-notifications.ts : myNotificationsRouter.post(
+users\my-notifications.ts : myNotificationsRouter.post('/me/notifications/read-all', authenticate, asyncMiddleware(markAsReadAllUserNotifications))
+users\my-subscriptions.ts : mySubscriptionsRouter.get(
+users\my-subscriptions.ts : mySubscriptionsRouter.get('/me/subscriptions/exist', authenticate, areSubscriptionsExistValidator, asyncMiddleware(areSubscriptionsExist))
+users\my-subscriptions.ts : mySubscriptionsRouter.get(
+users\my-subscriptions.ts : mySubscriptionsRouter.post('/me/subscriptions', authenticate, userSubscriptionAddValidator, addUserSubscription)
+users\my-subscriptions.ts : mySubscriptionsRouter.get('/me/subscriptions/:uri', authenticate, userSubscriptionGetValidator, asyncMiddleware(getUserSubscription))
+users\my-subscriptions.ts : mySubscriptionsRouter.delete(
+users\my-video-playlists.ts : myVideoPlaylistsRouter.get('/me/video-playlists/videos-exist',
+users\registrations.ts : registrationsRouter.post(
+users\registrations.ts : registrationsRouter.post(
+users\registrations.ts : registrationsRouter.post(
+users\registrations.ts : registrationsRouter.delete(
+users\registrations.ts : registrationsRouter.get(
+users\registrations.ts : registrationsRouter.post(
+users\token.ts : tokensRouter.post(
+users\token.ts : tokensRouter.post(
+users\token.ts : tokensRouter.get(
+users\token.ts : tokensRouter.post(
+users\token.ts : tokensRouter.get(
+users\token.ts : tokensRouter.post(
+users\two-factor.ts : twoFactorRouter.post(
+users\two-factor.ts : twoFactorRouter.post(
+users\two-factor.ts : twoFactorRouter.post(
+users\user-exports.ts : userExportsRouter.post(
+users\user-exports.ts : userExportsRouter.get('/:userId/exports', authenticate, asyncMiddleware(userExportsListValidator), asyncMiddleware(listUserExports))
+users\user-exports.ts : userExportsRouter.delete(
+users\user-imports.ts : userImportRouter.get(
+video-channels\index.ts : videoChannelRouter.get(
+video-channels\index.ts : videoChannelRouter.post(
+video-channels\index.ts : videoChannelRouter.put(
+video-channels\index.ts : videoChannelRouter.delete(
+video-channels\index.ts : videoChannelRouter.get(
+video-channels\index.ts : videoChannelRouter.get(
+video-channels\index.ts : videoChannelRouter.post(
+video-channels\index.ts : videoChannelRouter.get(
+video-channels\index.ts : videoChannelRouter.get(
+video-channels\index.ts : videoChannelRouter.get(
+video-channels\index.ts : videoChannelRouter.post(
+video-channels\ownership.ts : ownershipChannelRouter.post(
+video-channels\ownership.ts : ownershipChannelRouter.get(
+video-channels\ownership.ts : ownershipChannelRouter.get(
+video-channels\ownership.ts : ownershipChannelRouter.post(
+video-channels\ownership.ts : ownershipChannelRouter.post(
+video-channels\ownership.ts : ownershipChannelRouter.delete(
+video-channels\video-channel-logos.ts : videoChannelLogosRouter.post(
+video-channels\video-channel-logos.ts : videoChannelLogosRouter.post(
+video-channels\video-channel-logos.ts : videoChannelLogosRouter.delete(
+video-channels\video-channel-logos.ts : videoChannelLogosRouter.delete(
+videos\blacklist.ts : blacklistRouter.post(
+videos\blacklist.ts : blacklistRouter.get(
+videos\blacklist.ts : blacklistRouter.put(
+videos\blacklist.ts : blacklistRouter.delete(
+videos\captions.ts : videoCaptionsRouter.post(
+videos\captions.ts : videoCaptionsRouter.get('/:videoId/captions', asyncMiddleware(listVideoCaptionsValidator), asyncMiddleware(listVideoCaptions))
+videos\captions.ts : videoCaptionsRouter.put(
+videos\captions.ts : videoCaptionsRouter.delete(
+videos\chapters.ts : videoChaptersRouter.get(
+videos\chapters.ts : videoChaptersRouter.put(
+videos\comment.ts : videoCommentRouter.get(
+videos\comment.ts : videoCommentRouter.get(
+videos\comment.ts : videoCommentRouter.get(
+videos\comment.ts : videoCommentRouter.post(
+videos\comment.ts : videoCommentRouter.post(
+videos\comment.ts : videoCommentRouter.delete(
+videos\comment.ts : videoCommentRouter.post(
+videos\comment.ts : videoCommentRouter.get(
+videos\embed-privacy.ts : videoEmbedPrivacyRouter.get(
+videos\embed-privacy.ts : videoEmbedPrivacyRouter.put(
+videos\embed-privacy.ts : videoEmbedPrivacyRouter.get(
+videos\files.ts : filesRouter.get(
+videos\files.ts : filesRouter.delete(
+videos\files.ts : filesRouter.delete(
+videos\files.ts : filesRouter.delete(
+videos\files.ts : filesRouter.delete(
+videos\import.ts : videoImportsRouter.post(
+videos\import.ts : videoImportsRouter.post(
+videos\import.ts : videoImportsRouter.post(
+videos\import.ts : videoImportsRouter.delete(
+videos\index.ts : videosRouter.get('/categories', openapiOperationDoc({ operationId: 'getCategories' }), listVideoCategories)
+videos\index.ts : videosRouter.get('/licences', openapiOperationDoc({ operationId: 'getLicences' }), listVideoLicences)
+videos\index.ts : videosRouter.get('/languages', openapiOperationDoc({ operationId: 'getLanguages' }), videoLanguagesScopeValidator, listVideoLanguages)
+videos\index.ts : videosRouter.get('/privacies', openapiOperationDoc({ operationId: 'getPrivacies' }), listVideoPrivacies)
+videos\index.ts : videosRouter.get(
+videos\index.ts : videosRouter.get(
+videos\index.ts : videosRouter.delete(
+videos\live.ts : liveRouter.post(
+videos\live.ts : liveRouter.get(
+videos\live.ts : liveRouter.get(
+videos\live.ts : liveRouter.put(
+videos\live.ts : liveRouter.get(
+videos\ownership.ts : ownershipVideoRouter.post(
+videos\ownership.ts : ownershipVideoRouter.get(
+videos\ownership.ts : ownershipVideoRouter.get(
+videos\ownership.ts : ownershipVideoRouter.post(
+videos\ownership.ts : ownershipVideoRouter.post(
+videos\ownership.ts : ownershipVideoRouter.delete(
+videos\passwords.ts : videoPasswordRouter.get(
+videos\passwords.ts : videoPasswordRouter.put(
+videos\passwords.ts : videoPasswordRouter.post('/:videoId/passwords', authenticate, asyncMiddleware(addVideoPasswordValidator), asyncMiddleware(addVideoPassword))
+videos\passwords.ts : videoPasswordRouter.delete(
+videos\rate.ts : rateVideoRouter.put(
+videos\source.ts : videoSourceRouter.get(
+videos\source.ts : videoSourceRouter.delete(
+videos\stats.ts : statsRouter.get(
+videos\stats.ts : statsRouter.get(
+videos\stats.ts : statsRouter.get(
+videos\stats.ts : statsRouter.get(
+videos\storyboard.ts : storyboardRouter.get(
+videos\studio.ts : studioRouter.post(
+videos\token.ts : tokenRouter.post(
+videos\transcoding.ts : transcodingRouter.post(
+videos\update.ts : updateRouter.put(
+videos\upload.ts : uploadRouter.post(
